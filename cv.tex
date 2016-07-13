@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\usepackage{marvosym}
+\usepackage{marvosym,calc}
 
 \setlength{\parindent}{0.0in}
 \setlength{\parskip}{5pt plus 1pt}
@@ -11,6 +11,9 @@
 \topmargin -0.0in
 \headsep -0.25in
 
+\newlength{\nL}
+\newcommand{\underLineText}[1]{\settowidth{\nL}{#1}\setlength{\nL}{0.8\textwidth-\nL}\underline{{\sc #1}\hspace{\nL}}}
+
 \begin{document}
 
 \title{\bf Curriculum Vitae}
@@ -18,7 +21,7 @@
 \date{}
 \maketitle
 
-\section{{Basic Information}}
+\section*{\underLineText{Basic Information}}
 \begin{itemize}
 \item Graduate Student, Department of Computer Science, University of California, Santa Barbara.
 %\item {\it Office}: MSCS 314, Stillwater, OK 74075
@@ -26,11 +29,10 @@
 \item {\it Email} \Letter: shiyu \verb+AT+ cs.ucsb.edu
 \end{itemize}
 
-\section{{Research Interests}}
-
+\section*{\underLineText{Research Interests}}
 My previous research interests included game theories (i.e., incentive mechanisms) in the context of crowdsourcing and wireless networks, cryptography and security.
 
-\section{{Education}}
+\section*{\underLineText{Education}}
 \begin{itemize}
 \item {\bf PhD Student} (2015-), Computer Science, University of California, Santa Barbara.
 
@@ -41,7 +43,7 @@ Advisor: Dr. Tingting Chen.
 \item {\bf B.E.} (2008-2012), Information Security, Harbin Institute of Technology. GPA: 86.6/100.
 \end{itemize}
 
-\section{{Publications}}
+\section*{\underLineText{Publications}}
 \begin{itemize}
 \item {\it Conferences}
 \begin{enumerate}
@@ -62,7 +64,7 @@ Advisor: Dr. Tingting Chen.
 \end{enumerate}
 \end{itemize}
 
-\section{{Experience}}
+\section*{\underLineText{Experience}}
 \begin{itemize}
 \item {\bf Teaching Assistant} (09/2015-) at UCSB.
 
@@ -103,7 +105,7 @@ Research topics: Chaotic image encryption on various graphic formats, e.g., JPEG
 \end{itemize}
 %\end{resume}
 
-\section{{Honors and Awards}}
+\section*{\underLineText{Honors and Awards}}
 \begin{itemize}
 \item Fisher Scholarship, Computer Science Department, Oklahoma State University, 2014.
 \item Honorable Mention, Mathematical Contest in Modeling (MCM) (top 25\%), 2011.
